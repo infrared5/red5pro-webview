@@ -40,18 +40,24 @@
     [super viewWillAppear:animated];
     
     // load subscriber from local resource.
-    NSURL *subindex = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"index-subscriber" ofType:@"html"]];
+//    NSURL *subindex = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"index-subscriber" ofType:@"html"]];
+//    [_webView loadRequest:[NSURLRequest requestWithURL:subindex]];
+    
+    // OR //
+    
     // load publisher form local resource.
     NSURL *pubindex = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"index-publisher" ofType:@"html"]];
-//    [_webView loadRequest:[NSURLRequest requestWithURL:subindex]];
+    [_webView loadRequest:[NSURLRequest requestWithURL:pubindex]];
 
     // OR //
     
     // load subscriber from remote location.
-    [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://webrtc.red5.org/live/ios-index-subscriber.html"]]];
+//    [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://webrtc.red5.org/live/ios-index-subscriber.html"]]];
+    
+    // OR //
     
     // load publisher from remote location.
-    [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://webrtc.red5.org/live/ios-index-publisher.html"]]];
+//    [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://webrtc.red5.org/live/ios-index-publisher.html"]]];
     
 }
 

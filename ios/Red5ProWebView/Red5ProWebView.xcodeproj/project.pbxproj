@@ -15,7 +15,6 @@
 		4885C8401FC4672D00E77415 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4885C83F1FC4672D00E77415 /* main.m */; };
 		4885C84A1FC4672D00E77415 /* Red5ProWebViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4885C8491FC4672D00E77415 /* Red5ProWebViewTests.m */; };
 		4885C8551FC4672D00E77415 /* Red5ProWebViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4885C8541FC4672D00E77415 /* Red5ProWebViewUITests.m */; };
-		4885C8861FC4701D00E77415 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 4885C8651FC4701D00E77415 /* index.html */; };
 		4885C8871FC4701D00E77415 /* CHANGES.md in Resources */ = {isa = PBXBuildFile; fileRef = 4885C8681FC4701D00E77415 /* CHANGES.md */; };
 		4885C8881FC4701D00E77415 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4885C86A1FC4701D00E77415 /* LICENSE */; };
 		4885C8891FC4701D00E77415 /* maximize.png in Resources */ = {isa = PBXBuildFile; fileRef = 4885C86B1FC4701D00E77415 /* maximize.png */; };
@@ -43,6 +42,10 @@
 		4885C89F1FC4701D00E77415 /* screenfull.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 4885C8821FC4701D00E77415 /* screenfull.min.js */; };
 		4885C8A01FC4701D00E77415 /* playerProductInstall.swf in Resources */ = {isa = PBXBuildFile; fileRef = 4885C8841FC4701D00E77415 /* playerProductInstall.swf */; };
 		4885C8A11FC4701D00E77415 /* swfobject.js in Resources */ = {isa = PBXBuildFile; fileRef = 4885C8851FC4701D00E77415 /* swfobject.js */; };
+		4885C8A61FC4C5EC00E77415 /* index-publisher.html in Resources */ = {isa = PBXBuildFile; fileRef = 4885C8A21FC4C5EC00E77415 /* index-publisher.html */; };
+		4885C8A71FC4C5EC00E77415 /* ios-index-subscriber.html in Resources */ = {isa = PBXBuildFile; fileRef = 4885C8A31FC4C5EC00E77415 /* ios-index-subscriber.html */; };
+		4885C8A81FC4C5EC00E77415 /* ios-index-publisher.html in Resources */ = {isa = PBXBuildFile; fileRef = 4885C8A41FC4C5EC00E77415 /* ios-index-publisher.html */; };
+		4885C8A91FC4C5EC00E77415 /* index-subscriber.html in Resources */ = {isa = PBXBuildFile; fileRef = 4885C8A51FC4C5EC00E77415 /* index-subscriber.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +83,6 @@
 		4885C8541FC4672D00E77415 /* Red5ProWebViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Red5ProWebViewUITests.m; sourceTree = "<group>"; };
 		4885C8561FC4672D00E77415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4885C8631FC46A7C00E77415 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		4885C8651FC4701D00E77415 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		4885C8681FC4701D00E77415 /* CHANGES.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGES.md; sourceTree = "<group>"; };
 		4885C86A1FC4701D00E77415 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		4885C86B1FC4701D00E77415 /* maximize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maximize.png; sourceTree = "<group>"; };
@@ -108,6 +110,10 @@
 		4885C8821FC4701D00E77415 /* screenfull.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = screenfull.min.js; sourceTree = "<group>"; };
 		4885C8841FC4701D00E77415 /* playerProductInstall.swf */ = {isa = PBXFileReference; lastKnownFileType = file; path = playerProductInstall.swf; sourceTree = "<group>"; };
 		4885C8851FC4701D00E77415 /* swfobject.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = swfobject.js; sourceTree = "<group>"; };
+		4885C8A21FC4C5EC00E77415 /* index-publisher.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "index-publisher.html"; sourceTree = "<group>"; };
+		4885C8A31FC4C5EC00E77415 /* ios-index-subscriber.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "ios-index-subscriber.html"; sourceTree = "<group>"; };
+		4885C8A41FC4C5EC00E77415 /* ios-index-publisher.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "ios-index-publisher.html"; sourceTree = "<group>"; };
+		4885C8A51FC4C5EC00E77415 /* index-subscriber.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "index-subscriber.html"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,7 +208,10 @@
 		4885C8641FC46EB800E77415 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4885C8651FC4701D00E77415 /* index.html */,
+				4885C8A21FC4C5EC00E77415 /* index-publisher.html */,
+				4885C8A51FC4C5EC00E77415 /* index-subscriber.html */,
+				4885C8A41FC4C5EC00E77415 /* ios-index-publisher.html */,
+				4885C8A31FC4C5EC00E77415 /* ios-index-subscriber.html */,
 				4885C8661FC4701D00E77415 /* lib */,
 			);
 			path = Resources;
@@ -386,10 +395,11 @@
 				4885C83D1FC4672D00E77415 /* LaunchScreen.storyboard in Resources */,
 				4885C89C1FC4701D00E77415 /* red5pro-subscriber.swf in Resources */,
 				4885C89D1FC4701D00E77415 /* SHARED_OBJECT_README.md in Resources */,
-				4885C8861FC4701D00E77415 /* index.html in Resources */,
 				4885C83A1FC4672D00E77415 /* Assets.xcassets in Resources */,
 				4885C89E1FC4701D00E77415 /* SUBSCRIBER_README.md in Resources */,
 				4885C89F1FC4701D00E77415 /* screenfull.min.js in Resources */,
+				4885C8A81FC4C5EC00E77415 /* ios-index-publisher.html in Resources */,
+				4885C8A61FC4C5EC00E77415 /* index-publisher.html in Resources */,
 				4885C8911FC4701D00E77415 /* volume-2.png in Resources */,
 				4885C88D1FC4701D00E77415 /* pause.png in Resources */,
 				4885C88E1FC4701D00E77415 /* pause.svg in Resources */,
@@ -397,6 +407,7 @@
 				4885C8991FC4701D00E77415 /* red5pro-media.css in Resources */,
 				4885C89B1FC4701D00E77415 /* red5pro-sdk.min.js in Resources */,
 				4885C88B1FC4701D00E77415 /* minimize.png in Resources */,
+				4885C8A91FC4C5EC00E77415 /* index-subscriber.html in Resources */,
 				4885C8A01FC4701D00E77415 /* playerProductInstall.swf in Resources */,
 				4885C8381FC4672D00E77415 /* Main.storyboard in Resources */,
 				4885C8901FC4701D00E77415 /* play.svg in Resources */,
@@ -410,6 +421,7 @@
 				4885C88F1FC4701D00E77415 /* play.png in Resources */,
 				4885C8981FC4701D00E77415 /* README.md in Resources */,
 				4885C8891FC4701D00E77415 /* maximize.png in Resources */,
+				4885C8A71FC4C5EC00E77415 /* ios-index-subscriber.html in Resources */,
 				4885C89A1FC4701D00E77415 /* red5pro-publisher.swf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
