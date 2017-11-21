@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+    <!-- Recommended shim for cross-browser WebRTC support. -->
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <style>
+      video {
+        width: 100%;
+        height: 360px;
+        border: 1px black solid;
+      }
+      #message-field {
+        padding: 20px;
+        font-size: 20px;
+      }
+      .error {
+        background-color: #ff0000;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- `autoplay` will immediately show preview video. `muted` will mute the audio to avoid feedback noise. -->
+    <video id="red5pro-publisher" autoplay muted></video>
+    <!-- Exposes `red5prosdk` on the window global. -->
+    <script src="lib/red5pro/red5pro-sdk.min.js"></script>
+    <!-- Example script below. -->
+    <script>
+    (function (red5prosdk) {
+
+
+     if (!red5prosdk) {
+        var field = document.getElementById('message-field');
+        field.innerText = 'Red5 Pro SDK not loaded!';
+        field.classList.add('error');
+        return;
+      }
+
+          red5prosdk.setLogLevel('debug');
+
+
+          // Create a new instance of the WebRTC publisher.
+          var publisher = new red5prosdk.RTCPublisher();
+
+          // Initialize
+          publisher.init({
+              protocol: 'wss',
+              port: 8083,
+              host: 'webrtc.red5.org',
+              app: 'live',
+              streamName: 'stream1',
+              iceServers: [{urls: 'stun:stun2.l.google.com:19302'}]
+            })
+            .then(function() {
+              // Invoke the publish action.
+              return publisher.publish();
+            })
+            .catch(function(error) {
+              // A fault occurred while trying to initialize and publish the stream.
+              console.error(error);
+            });
+
+        })(window.red5prosdk);
+    </script>
+  </body>
+</html>
