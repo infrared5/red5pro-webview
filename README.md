@@ -32,10 +32,10 @@ The iOS implmentation uses the `WKWebView` to either load compiled sources or to
 
 Comment out and uncomment which tests you want to try. There are tests for:
 
-* Subscriber from local resource.
-* Publisher from local resource.
-* Subscriber from remote resource.
-* Publisher from remote resource.
+* Subscriber from local resource. [view](https://github.com/infrared5/red5pro-webview/blob/master/ios/Red5ProWebView/Resources/index-subscriber.html)
+* Publisher from local resource. [view](https://github.com/infrared5/red5pro-webview/blob/master/ios/Red5ProWebView/Resources/index-publisher.html)
+* Subscriber from remote resource. [view](https://github.com/infrared5/red5pro-webview/blob/master/ios/Red5ProWebView/Resources/ios-index-subscriber.html)
+* Publisher from remote resource. [view](https://github.com/infrared5/red5pro-webview/blob/master/ios/Red5ProWebView/Resources/ios-index-publisher.html)
 
 You may want to modify the configurations in each of those; currently, the point to `webrtc.red5.org` and either publish or subscribe to a stream names `stream1`.
 
