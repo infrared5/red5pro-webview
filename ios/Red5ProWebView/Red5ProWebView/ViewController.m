@@ -40,14 +40,14 @@
     [super viewWillAppear:animated];
     
     // load subscriber from local resource.
-//    NSURL *subindex = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"index-subscriber" ofType:@"html"]];
-//    [_webView loadRequest:[NSURLRequest requestWithURL:subindex]];
+    NSURL *subindex = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"index-subscriber" ofType:@"html"]];
+    [_webView loadRequest:[NSURLRequest requestWithURL:subindex]];
     
     // OR //
     
     // load publisher form local resource.
-    NSURL *pubindex = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"index-publisher" ofType:@"html"]];
-    [_webView loadRequest:[NSURLRequest requestWithURL:pubindex]];
+//    NSURL *pubindex = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"index-publisher" ofType:@"html"]];
+//    [_webView loadRequest:[NSURLRequest requestWithURL:pubindex]];
 
     // OR //
     
